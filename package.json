@@ -1,0 +1,25 @@
+{
+  "name": "extendutils",
+  "version": "0.1.0",
+  "description": "Some functions extening javascript objects like string",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/zekrotja/extendutils.git"
+  },
+  "keywords": [
+    "string",
+    "utils",
+    "extend",
+    "extension"
+  ],
+  "author": "zekro Development (zekro.de)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zekrotja/extendutils/issues"
+  },
+  "homepage": "https://github.com/zekrotja/extendutils#readme"
+}
