@@ -2,7 +2,7 @@
      <h1>~ extendutils ~</h1>
      <strong>A small library for extended string and array functions</strong><br><br>
      <a href="https://www.npmjs.com/package/extendutils" ><img src="https://img.shields.io/npm/v/extendutils.svg" /></a>&nbsp;
-     <a href="https://www.npmjs.com/package/extendutils" ><img src="https://img.shields.io/npm/dt/extendutils.svg" /></a>&nbsp;
+     <a href="https://www.npmjs.com/package/extendutils" ><img src="https://img.shields.io/npm/dt/extendutils.svg" /></a>
 
  </div>
 
