@@ -29,6 +29,7 @@ npm install extendutils --save
 Returns: **`boolean`**
 *Containing state*
 
+---
 
 ### `String.prototype.replaceAny(oldstring, *newstring)`
 
@@ -42,6 +43,7 @@ Returns: **`boolean`**
 Returns: **`string`**
 *String with replaced string sequences*
 
+---
 
 ### `Array.prototype.contains(content, *casesensitive)`
 
