@@ -17,6 +17,20 @@ Object.assign(String.prototype, {
         }
         else
             return totest.indexOf(casesens ? cont.toLowerCase() : cont) > -1
+    },
+    /**
+     * Replace all entered strings with new strings
+     * or remove strings when no new string is defined.
+     * @param {string} oldstr 
+     * @param {*string} newstr 
+     */
+    replaceAny(oldstr, newstr) {
+        if (!newstr)
+            newstr = ""
+        var curr = this
+        while (curr.indexOf(oldstr) > -1)
+            curr = curr.replace(oldstr, newstr)
+        return curr
     }
 })
 
@@ -36,7 +50,6 @@ Object.assign(Array.prototype, {
         if (Array.isArray(cont)) {
             (casesens ? this : this.map(s => s.toLowerCase())).forEach(s => {
                 cont.forEach(c => {
-                    console.log(s, c)
                     results.push(s.indexOf(casesens ? c : c.toLowerCase()) > -1)
                 })
             })
@@ -48,3 +61,4 @@ Object.assign(Array.prototype, {
         return results.indexOf(true) > -1
     }
 })
+
