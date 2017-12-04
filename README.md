@@ -16,26 +16,41 @@ npm install extendutils --save
 
 # Usage
 
-```js
-require('extendutils')
 
-// Check if a string contains a string!
-"One String".contains("Another String")
-// > returns true
+### `String.prototype.contains(content, *casesensitive)`
 
-// Or do it case sensitive!
-"One String".contains("Another string", true)
-// > returns false
+> Tests if the string contains another string or a string of an array.
 
-//  Or with arrays! (can also be case sensitive)
-"One String".contains(["Another", "String"])
-// > returns true
+| Parameter | Type | Optional (Default) | Description |
+|-----------|------|--------------------|-------------|
+| content | string / string[] | no | sequence / array which needs to be containing |
+| csasesensitive | boolean | yes (false) | check content case sensitive or not |
 
-// Or check strings in arrays! (can also be case sensitive)
-["Hey", "Ho"].contains("Hey")
-// > returns true
+Returns: **`boolean`**
+*Containing state*
 
-// Or check if an array contains a string of an array! (can also be case sensitive)
-["Hey", "Ho"].contains(["Yo", "Mo", "Ho"])
-// > returns true
-```
+
+### `String.prototype.replaceAny(oldstring, *newstring)`
+
+> Replace all entered strings with new strings or remove strings when no new string is defined.
+
+| Parameter | Type | Optional (Default) | Description |
+|-----------|------|--------------------|-------------|
+| oldstring | string | no | String that should be replaced |
+| newstring | string | yes (`""` *remove*) | Replace with |
+
+Returns: **`string`**
+*String with replaced string sequences*
+
+
+### `Array.prototype.contains(content, *casesensitive)`
+
+> Tests if the array contains a string or a string of another array. Atention: It returns true if the input array contains ANY string of the query, and not the specific sequence of it!
+
+| Parameter | Type | Optional (Default) | Description |
+|-----------|------|--------------------|-------------|
+| content | string / string[] | no | sequence / array which needs to be containing |
+| csasesensitive | boolean | yes (false) | check content case sensitive or not |
+
+Returns: **`boolean`**
+*Containing state*
