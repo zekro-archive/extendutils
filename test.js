@@ -39,3 +39,8 @@ console.log(
     "\n['Hey', 'Ho'] contains ['Mo', 'Bo', 'Ho'] (not case sensitive)\n> " +
     ['Hey', 'Ho'].contains(['Mo', 'Bo', 'Ho'])
 )
+
+console.log(
+    "\nReplace all 'e' with '---' in 'EeAaeade'\n> " +
+    "EeAaeade".replaceAny('e', '---')
+)
